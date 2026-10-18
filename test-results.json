@@ -1,0 +1,2315 @@
+{
+  "Mode": "offline WebView2 fixtures; no live registration or closure",
+  "Passed": true,
+  "CompletedAtUtc": "2026-09-26T07:17:12.8073742+00:00",
+  "Checks": [
+    {
+      "Name": "Login request watch recognizes session POST without retaining its payload",
+      "Passed": true
+    },
+    {
+      "Name": "Login request watch also disarms a retry for an unfamiliar authentication POST",
+      "Passed": true
+    },
+    {
+      "Name": "Login request watch rejects reads, logout, deceptive origins and non-HTTPS transport",
+      "Passed": true
+    },
+    {
+      "Name": "Login request watch fixture origins are unavailable in production",
+      "Passed": true
+    },
+    {
+      "Name": "Generated passwords have length and all four character classes",
+      "Passed": true
+    },
+    {
+      "Name": "Generated password sample contains no duplicates",
+      "Passed": true
+    },
+    {
+      "Name": "Valid full and partial details are accepted",
+      "Passed": true
+    },
+    {
+      "Name": "Empty malformed and future-date details are rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Official URI allowlist accepts HTTPS Ubisoft hosts",
+      "Passed": true
+    },
+    {
+      "Name": "Official URI allowlist rejects deceptive origins and schemes",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: exact registration endpoints classified",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: unrelated endpoint and non-POST ignored",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: host spoof and insecure origin rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: fixture host requires explicit offline mode",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: query contents never appear in classification",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: empty validation reports establish known validation",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: HTTP-success body validation errors block retry",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: numeric API error retained without response text",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: missing malformed and oversized validation bodies block retry",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: successful creation response requires a nonempty UUID user ID",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: missing malformed empty and non-UUID creation IDs never prove creation",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: creation IDs accompanied by errors never prove creation",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: non-success HTTP statuses cannot prove creation even with a valid user ID",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: validation and email-code responses never prove account creation",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: creation evidence contains no user ID credentials or response text",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: structured security response URL yields only a fixed classification",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: additional official response-page subdomains recognized",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: actual challenge script and frame tags recognized",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: generic denial and mere security keywords stay unknown",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: spoofed security host and unrelated URL remain unknown",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: insecure credentialed and unusual-port security links remain unknown",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: 403 API error retains numeric code only",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: unknown or malformed 403 can never establish successful validation",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: access classification never serializes body URL tokens or account text",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: COM-style short reads use zero offset and parse a valid response",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: stream inspection leaves disposal with its owner",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: COM-style short reads retain validation failure count",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: streamed validation stops at the byte limit plus one",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: access classification shares bounded COM-compatible stream reading",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: creation evidence shares bounded zero-offset stream reader",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: oversized creation response never proves creation and stops at byte limit",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: clean new run has no traffic or failure",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: request remains pending before response",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: response body read is still pending",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: complete successful validation releases pending",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: email-code request immediately disallows registration retry",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: code request evidence persists after response",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: account creation request immediately disallows retry",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: HTTP failure remains a failure",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: unreadable response blocks retry",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: later response cannot erase prior failure",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: stale asynchronous body cannot change new run",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: prior run's late response ignored conservatively",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: response without observed request never allows retry",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: concurrent response reads keep pending until all complete",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: diagnostics retain only safe response metadata",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: 403 forbids retry before body classification completes",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: security classification retained as safe snapshot metadata",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: later manual success changes response kind without removing failure history",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: code-request access failure also retains only numeric API classification",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: request and response headers alone do not prove creation",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: observed current-run successful creation latches proof",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: later events preserve confirmed creation within the same attempt",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: new attempt clears prior creation proof",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: unreadable creation body never latches proof",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: ledger independently rejects proof from another endpoint",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: ledger independently rejects non-2xx creation proof",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: unobserved creation response cannot establish a new account",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: uncertain response attribution suppresses proof for the entire attempt",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: old-run creation body is ignored",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: overlap with an old body read prevents new-creation attribution",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: overlap with an old outstanding request prevents new-creation attribution",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: explicit manual recovery in the same known run may confirm creation after a denial",
+      "Passed": true
+    },
+    {
+      "Name": "Request watch: creation snapshot exposes a boolean without the user ID or response secrets",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: constructor creates no file",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: explicit open creates empty log",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: requested test folder used",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: embedded newlines stay inside one JSON row",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: UTF-8 without BOM",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: JSON escapes preserve identity fields",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: timestamps normalized to UTC",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: exact metadata-only schema",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: attempted registration is not claimed created",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: repeated status with new timestamp retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: prior record bytes preserved",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: reopening does not truncate",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: ambiguous created status rejected without write",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: append separates a prior row without final newline",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: both rows remain parseable after separator repair",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: concurrent instances retain all complete rows",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: concurrent identities are not mixed",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: unknown results keep distinct status",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: runner outcome prepared retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: runner outcome resumed retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: runner outcome paused retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: runner outcome verification_required retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: runner outcome waiting_for_email retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: runner outcome mail_error retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account log: runner outcome mail_timeout retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: read starts empty without creating files",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: actual Windows DPAPI roundtrip",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: identity provider and outcome retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: update timestamp is UTC",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: diagnostic string excludes password",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: disk contains no plaintext password",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: disk contains no plaintext email or username",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: no plaintext temporary or log files",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: new instance decrypts existing account",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: status updates retain one record per run",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: separate runs retain both complete accounts",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: nullable date and inbox retained",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: confirmed and attempted states remain distinct",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: requesting closure does not invent a confirmation time",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: closure confirmation roundtrips exact time normalized to UTC",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: deletion estimate is exactly 720 hours after confirmation in UTC",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: deletion timestamp is the estimated UTC time in Unix seconds",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: 30-day estimates retain 720 elapsed hours across both daylight-saving changes",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: serialized deletion estimates are ignored and recomputed from the original confirmation",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: an out-of-range future estimate stays unavailable without changing its observation",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: later timestamp and status-only saves preserve first closure time",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: legacy v1 records without closure field retain credentials and no invented time",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: legacy records accept closure timestamp on subsequent save",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: invalid status leaves encrypted records unchanged",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: tampered ciphertext gives safe error",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: damaged store is preserved without overwrite",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: original encrypted file still decrypts",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: concurrent writers lose no accounts",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: concurrent writes preserve credential values",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: successful atomic writes leave no temporary files",
+      "Passed": true
+    },
+    {
+      "Name": "Account store: schema excludes API keys verification codes and mail",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: leading zero code preserved",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: message identity and receipt timestamp retained",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: old code rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: exact cutoff rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: future received timestamp rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: other inbox rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: other message identity rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: other recipient rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: MailSlurp recipient local and domain case normalization accepted",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: plus-address mismatch rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: sender suffix spoof rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: sender prefix spoof rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: sender display name spoof rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: Ubisoft subdomain accepted",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: Ubisoft ubi.com address accepted",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: password reset rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: login OTP rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: generic subject login code rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: two-step OTP rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: unrelated numeric mail rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: ambiguous numeric codes rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: repeated same code accepted",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: too short code rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: too long code rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: alphanumeric token rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: HTML attributes CSS and links ignored",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: missing metadata rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: observed Email Validation security-code template ignores legal postal numbers and preserves a leading zero",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: observed HTML security-code template scopes code after the expiry clause",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: conflicting expiry-scoped security codes are rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: repeated same expiry-scoped code is accepted",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: an unscoped six-digit footer number never substitutes for the validation code",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: the observed template requires exactly six scoped code digits",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: security-code mail without Email Validation context is rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: security-code mail with a different subject does not use the observed template parser",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: password-reset lookalike of the observed template remains rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: login lookalike of the observed template remains rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: two-step lookalike of the observed template remains rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: observed security template still enforces sender, recipient and registration cutoff",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: short inbox receives normalized To with original message identity and timestamp",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: short recipient normalization does not accept a different address",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: normalized recipient still requires exact inbox and message IDs",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: normalized recipient still requires fresh mail from an allowed sender",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: create and connect parse inbox",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: create uses documented options endpoint",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: connect reuses exact inbox ID without creating another inbox",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: credentials only in HTTPS header",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: new inbox requests short address format",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: inbox creation requests no expiry",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: no inbox deletion requests",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: trial expiry preserved for display",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: already expired inbox rejected",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: connect rejects mismatched inbox ID",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: safe provider failure 401",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: safe provider failure 403",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: safe provider failure 402",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: safe provider failure 429",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: safe provider failure 302",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: safe provider failure 500",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: transport errors do not expose API key",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: malformed response does not expose API key",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: polling skips irrelevant mail and finds code",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: polling constrained by inbox since and sort",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: polling returns code for normalized To without changing the stored short address",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: bounded polling returns none when no mail arrives",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: zero timeout does not send requests",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: caller cancellation interrupts pending request",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: deadline cancels pending request and returns none",
+      "Passed": true
+    },
+    {
+      "Name": "Mail: invalid header key rejected before requests",
+      "Passed": true
+    },
+    {
+      "Name": "Embedded browser requests English",
+      "Passed": true
+    },
+    {
+      "Name": "Default script refuses non-Ubisoft origin",
+      "Passed": true
+    },
+    {
+      "Name": "Wrong-origin refusal makes no field events",
+      "Passed": true
+    },
+    {
+      "Name": "Login pathname is not filled",
+      "Passed": true
+    },
+    {
+      "Name": "Registration script reports filled fields",
+      "Passed": true
+    },
+    {
+      "Name": "Known birthday IDs and date input are filled",
+      "Passed": true
+    },
+    {
+      "Name": "Semantic email and username fields are filled",
+      "Passed": true
+    },
+    {
+      "Name": "Password survives JSON escaping without script injection",
+      "Passed": true
+    },
+    {
+      "Name": "Filled fields dispatch input and change events",
+      "Passed": true
+    },
+    {
+      "Name": "Consent checkbox is unchanged",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification and one-time-code fields stay blank",
+      "Passed": true
+    },
+    {
+      "Name": "Embedded login form and current-password fields stay blank",
+      "Passed": true
+    },
+    {
+      "Name": "Hidden disabled and readonly fields are untouched",
+      "Passed": true
+    },
+    {
+      "Name": "No click or form submission occurs",
+      "Passed": true
+    },
+    {
+      "Name": "Skipped fields dispatch no input or change events",
+      "Passed": true
+    },
+    {
+      "Name": "Navigation refuses an unexpected origin",
+      "Passed": true
+    },
+    {
+      "Name": "Repeated cookie-blocked probes never activate registration",
+      "Passed": true
+    },
+    {
+      "Name": "Cookie blocker is identified",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie overlay 'I refuse cookies' blocks navigation without choosing cookies",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie overlay 'I do not accept cookies' blocks navigation without choosing cookies",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie overlay 'I do not allow cookies' blocks navigation without choosing cookies",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie overlay 'I don't accept cookies' blocks navigation without choosing cookies",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie overlay 'I don’t accept cookies' blocks navigation without choosing cookies",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie overlay 'I accept cookies' blocks navigation without choosing cookies",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie overlay 'I allow cookies' blocks navigation without choosing cookies",
+      "Passed": true
+    },
+    {
+      "Name": "Dismissed cookie fixture returns to login without clicking",
+      "Passed": true
+    },
+    {
+      "Name": "First ignored activation is not reported as registration ready",
+      "Passed": true
+    },
+    {
+      "Name": "Ignored activation remains retryable",
+      "Passed": true
+    },
+    {
+      "Name": "Second activation reaches visible registration fields",
+      "Passed": true
+    },
+    {
+      "Name": "Opening an already ready form preserves its values and avoids clicks",
+      "Passed": true
+    },
+    {
+      "Name": "Gateway route without rendered registration fields is still loading",
+      "Passed": true
+    },
+    {
+      "Name": "Gateway becomes ready when registration fields appear",
+      "Passed": true
+    },
+    {
+      "Name": "Registration fields behind an overlay are not reported as ready",
+      "Passed": true
+    },
+    {
+      "Name": "Nested button labels with extra whitespace identify registration",
+      "Passed": true
+    },
+    {
+      "Name": "Registration navigation supports a button control",
+      "Passed": true
+    },
+    {
+      "Name": "Hidden registration controls are not selected",
+      "Passed": true
+    },
+    {
+      "Name": "Observed uppercase Ubisoft anchor identifies the registration link",
+      "Passed": true
+    },
+    {
+      "Name": "Observed href-null anchor invokes its handler and opens registration",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I refuse cookies' without choosing 'I accept cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I refuse cookies' without choosing 'I allow cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I do not accept cookies' without choosing 'I accept cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I do not accept cookies' without choosing 'I allow cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I do not allow cookies' without choosing 'I accept cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I do not allow cookies' without choosing 'I allow cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I don't accept cookies' without choosing 'I accept cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I don't accept cookies' without choosing 'I allow cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I don’t accept cookies' without choosing 'I accept cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "English cookie choice rejects 'I don’t accept cookies' without choosing 'I allow cookies'",
+      "Passed": true
+    },
+    {
+      "Name": "An accept-only English cookie dialog 'I accept cookies' is detected but never accepted",
+      "Passed": true
+    },
+    {
+      "Name": "An accept-only English cookie dialog 'I allow cookies' is detected but never accepted",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic inspection detects the cookie dialog",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic cookie action refuses an unexpected origin without clicking",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic cookie action rejects optional cookies and returns to login",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic submit never submits a login form",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic flow opens the registration DOB step through the existing navigation control",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic flow fills the configured first of January 1990 birthday",
+      "Passed": true
+    },
+    {
+      "Name": "Birthday fixture reproduces Ubisoft's valid Angular form with native single-digit pattern mismatches",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic flow continues through Ubisoft's native pattern mismatch to the account form",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic account fill supplies both email fields, username and password",
+      "Passed": true
+    },
+    {
+      "Name": "A hidden background CAPTCHA iframe does not block the ordinary account form",
+      "Passed": true
+    },
+    {
+      "Name": "A visible noninteractive reCAPTCHA badge does not block the account form",
+      "Passed": true
+    },
+    {
+      "Name": "Account checkbox fixtures match Ubisoft's transparent input and visible label styling",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic consents select transparent required checkboxes through their visible labels",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic flow submits the prepared account form once",
+      "Passed": true
+    },
+    {
+      "Name": "Submission scrolls the below-fold button into view and sends trusted pointer events",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic retry never submits the same account run twice",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic inspection stops at explicit email verification",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic flow does not enter a verification code or continue through verification",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic account submit refuses an unexpected origin without clicking",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic consents clear a preselected optional newsletter checkbox",
+      "Passed": true
+    },
+    {
+      "Name": "A selected disabled newsletter checkbox prevents automatic completion and submission",
+      "Passed": true
+    },
+    {
+      "Name": "A transparent consent input with an invisible label is never selected",
+      "Passed": true
+    },
+    {
+      "Name": "An unrecognized mandatory consent requires manual attention",
+      "Passed": true
+    },
+    {
+      "Name": "An unrecognized mandatory consent is never selected or submitted",
+      "Passed": true
+    },
+    {
+      "Name": "An unrecognized blocking modal prevents submission and automatic modal clicks",
+      "Passed": true
+    },
+    {
+      "Name": "A visible CAPTCHA challenge blocks automatic progression",
+      "Passed": true
+    },
+    {
+      "Name": "A stale response token never dismisses a currently visible CAPTCHA challenge",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic actions do not click CAPTCHA verification or submit behind it",
+      "Passed": true
+    },
+    {
+      "Name": "An explicit image verification challenge is recognized",
+      "Passed": true
+    },
+    {
+      "Name": "Image verification remains for the user",
+      "Passed": true
+    },
+    {
+      "Name": "An explicit server validation error is observed",
+      "Passed": true
+    },
+    {
+      "Name": "A server error does not trigger repeated submission",
+      "Passed": true
+    },
+    {
+      "Name": "Ubisoft's visible grecaptcha-error element is detected without resubmitting",
+      "Passed": true
+    },
+    {
+      "Name": "Generic welcome text is not evidence that an account was created",
+      "Passed": true
+    },
+    {
+      "Name": "Run identifiers are safely serialized without script injection",
+      "Passed": true
+    },
+    {
+      "Name": "Safely serialized run identifiers retain at-most-once behavior",
+      "Passed": true
+    },
+    {
+      "Name": "The registration fixture ignores element.click without a trusted pointer sequence",
+      "Passed": true
+    },
+    {
+      "Name": "Pointer-dependent registration succeeds through the production submit dispatcher",
+      "Passed": true
+    },
+    {
+      "Name": "A modal covering the target after preparation prevents the real pointer click",
+      "Passed": true
+    },
+    {
+      "Name": "A replacement button cannot receive a click prepared for an earlier DOM element",
+      "Passed": true
+    },
+    {
+      "Name": "Stopping automation before dispatch prevents the prepared pointer click",
+      "Passed": true
+    },
+    {
+      "Name": "The explicit host-authorized retry action allows at most two total pointer attempts",
+      "Passed": true
+    },
+    {
+      "Name": "Changed email values blocks both conditional retry and native-click confirmation",
+      "Passed": true
+    },
+    {
+      "Name": "Changed password value blocks both conditional retry and native-click confirmation",
+      "Passed": true
+    },
+    {
+      "Name": "Changed input element blocks both conditional retry and native-click confirmation",
+      "Passed": true
+    },
+    {
+      "Name": "Changed form identity blocks both conditional retry and native-click confirmation",
+      "Passed": true
+    },
+    {
+      "Name": "Pending Angular form validation blocks preparation before any pointer event",
+      "Passed": true
+    },
+    {
+      "Name": "A form whose asynchronous validation becomes valid can be prepared normally",
+      "Passed": true
+    },
+    {
+      "Name": "Submission preparation never returns email username password or its private input snapshot",
+      "Passed": true
+    },
+    {
+      "Name": "Focusing the button allows blur-triggered pending validation to settle before reserving an attempt",
+      "Passed": true
+    },
+    {
+      "Name": "Changed pending validation after preparation prevents the production native click",
+      "Passed": true
+    },
+    {
+      "Name": "Changed invalid Angular state after preparation prevents the production native click",
+      "Passed": true
+    },
+    {
+      "Name": "Changed ARIA invalid state after preparation prevents the production native click",
+      "Passed": true
+    },
+    {
+      "Name": "Changed required consent after preparation prevents the production native click",
+      "Passed": true
+    },
+    {
+      "Name": "Ubisoft invalid-feedback errors are revealed and block account submission",
+      "Passed": true
+    },
+    {
+      "Name": "A disabled create-account button is never submitted",
+      "Passed": true
+    },
+    {
+      "Name": "Invalid account fields block submission",
+      "Passed": true
+    },
+    {
+      "Name": "A missing essential password field blocks submission",
+      "Passed": true
+    },
+    {
+      "Name": "A blank required username blocks submission",
+      "Passed": true
+    },
+    {
+      "Name": "Mismatched email confirmation blocks submission",
+      "Passed": true
+    },
+    {
+      "Name": "Unchecked required terms block submission",
+      "Passed": true
+    },
+    {
+      "Name": "An account form with only a generic Continue button is not submitted",
+      "Passed": true
+    },
+    {
+      "Name": "A disabled birthday Continue button is not activated",
+      "Passed": true
+    },
+    {
+      "Name": "Birthday progression requires an explicit supported Continue label",
+      "Passed": true
+    },
+    {
+      "Name": "A native pattern mismatch remains blocking when the birthday form uses native validation",
+      "Passed": true
+    },
+    {
+      "Name": "The birthday workaround never ignores an unrecognized native pattern",
+      "Passed": true
+    },
+    {
+      "Name": "Other native validity errors still block birthday progression in a novalidate form",
+      "Passed": true
+    },
+    {
+      "Name": "April has no thirty-first day even when the page retains Angular valid styling",
+      "Passed": true
+    },
+    {
+      "Name": "An ordinary year has no February twenty-ninth even when the page retains Angular valid styling",
+      "Passed": true
+    },
+    {
+      "Name": "A century not divisible by four hundred is not a leap year even when the page retains Angular valid styling",
+      "Passed": true
+    },
+    {
+      "Name": "Day zero is invalid even when the page retains Angular valid styling",
+      "Passed": true
+    },
+    {
+      "Name": "Month thirteen is invalid even when the page retains Angular valid styling",
+      "Passed": true
+    },
+    {
+      "Name": "A truncated birthday year is incomplete even when the page retains Angular valid styling",
+      "Passed": true
+    },
+    {
+      "Name": "Non-numeric birthday text is invalid even when the page retains Angular valid styling",
+      "Passed": true
+    },
+    {
+      "Name": "A real leap day in a century divisible by four hundred can continue",
+      "Passed": true
+    },
+    {
+      "Name": "A birthday Continue click is dispatched once while the page remains on the same step",
+      "Passed": true
+    },
+    {
+      "Name": "Real automatic runner completes cookies to submission and pauses for email verification",
+      "Passed": true
+    },
+    {
+      "Name": "The real runner scrolls to the account button and completes a trusted pointer-dependent submit",
+      "Passed": true
+    },
+    {
+      "Name": "Automatic runner statuses contain no account credentials",
+      "Passed": true
+    },
+    {
+      "Name": "Resume after a sent attempt never refills or resubmits a reset account form",
+      "Passed": true
+    },
+    {
+      "Name": "A blocking dialog after the account click pauses monitoring without another click",
+      "Passed": true
+    },
+    {
+      "Name": "Stop and resume with unchanged details refills a reloaded birthday form",
+      "Passed": true
+    },
+    {
+      "Name": "Stop prevents later progression and submission",
+      "Passed": true
+    },
+    {
+      "Name": "A disabled birthday button never produces a false progression status",
+      "Passed": true
+    },
+    {
+      "Name": "The automatic runner waits after one Continue click without clicking a stalled birthday form again",
+      "Passed": true
+    },
+    {
+      "Name": "An ignored Create account click is reported as an attempt, never as a submitted registration, and is never retried",
+      "Passed": true
+    },
+    {
+      "Name": "The ignored-submit deadline pauses despite repeated loading/account state changes",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification inspection accepts an empty code on an explicit verification form",
+      "Passed": true
+    },
+    {
+      "Name": "Single email verification input preserves leading zeroes and triggers ordinary field events",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification submission prepares visible coordinates without clicking",
+      "Passed": true
+    },
+    {
+      "Name": "Verification bridge confirmation accepts an empty code and preserves the prepared target",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification reserves only one attempt per run even if a different code is supplied",
+      "Passed": true
+    },
+    {
+      "Name": "Verification script results do not expose the code or mailbox address",
+      "Passed": true
+    },
+    {
+      "Name": "Verification confirmation refuses a target disabled after preparation",
+      "Passed": true
+    },
+    {
+      "Name": "A verification reservation cannot be canceled by a different run",
+      "Passed": true
+    },
+    {
+      "Name": "The host can cancel a known unclicked verification reservation without clearing account submission",
+      "Passed": true
+    },
+    {
+      "Name": "Segmented email verification fills exactly the matching number of numeric code inputs",
+      "Passed": true
+    },
+    {
+      "Name": "Segmented email verification rejects a code with the wrong number of digits without partial filling",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification never fills an OTP on the unrelated /login route",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification never fills an OTP on the unrelated /reset-password route",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification never fills an OTP on the unrelated /change-email route",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification never fills an OTP on the unrelated /two-factor route",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification never fills an OTP on the unrelated /unknown route",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification rejects the Two-factor authentication context even on a supported route",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification rejects the 2-Step Verification context even on a supported route",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification rejects the Reset your password context even on a supported route",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification rejects the Change your email address context even on a supported route",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification rejects the Authenticator code context even on a supported route",
+      "Passed": true
+    },
+    {
+      "Name": "An unrelated one-time-code field needs explicit email verification context",
+      "Passed": true
+    },
+    {
+      "Name": "A visible current-password field blocks email code filling",
+      "Passed": true
+    },
+    {
+      "Name": "Email code filling refuses an unexpected origin",
+      "Passed": true
+    },
+    {
+      "Name": "A visible recipient mismatch blocks code filling",
+      "Passed": true
+    },
+    {
+      "Name": "A masked recipient can use the run-scoped mailbox without guessing the hidden address",
+      "Passed": true
+    },
+    {
+      "Name": "An input hidden by ancestor opacity is never filled",
+      "Passed": true
+    },
+    {
+      "Name": "A hidden email code form is never filled",
+      "Passed": true
+    },
+    {
+      "Name": "Email verification pauses for visible CAPTCHA even when an old token exists",
+      "Passed": true
+    },
+    {
+      "Name": "A hidden background CAPTCHA does not prevent email verification filling",
+      "Passed": true
+    },
+    {
+      "Name": "An unrelated visible modal blocks automatic email verification",
+      "Passed": true
+    },
+    {
+      "Name": "Nonnumeric verification values are rejected without script injection",
+      "Passed": true
+    },
+    {
+      "Name": "Verification run identifiers are safely serialized",
+      "Passed": true
+    },
+    {
+      "Name": "A single verification field enforces its maximum length before filling",
+      "Passed": true
+    },
+    {
+      "Name": "Two plausible verification buttons require manual review instead of guessing",
+      "Passed": true
+    },
+    {
+      "Name": "A resend-code button is never used to submit verification",
+      "Passed": true
+    },
+    {
+      "Name": "Offscreen email verification buttons are scrolled into view before preparation",
+      "Passed": true
+    },
+    {
+      "Name": "Verification confirmation refuses a replacement button even with the same label and ID",
+      "Passed": true
+    },
+    {
+      "Name": "A visible verification error prevents filling and submission",
+      "Passed": true
+    },
+    {
+      "Name": "Explicit email verification success is recognized without a code",
+      "Passed": true
+    },
+    {
+      "Name": "Generic welcome text never confirms email verification",
+      "Passed": true
+    },
+    {
+      "Name": "Actual email-validation-enforcement screen is recognized with an empty verification code",
+      "Passed": true
+    },
+    {
+      "Name": "Actual email-validation-enforcement label identifies its inputId text code field",
+      "Passed": true
+    },
+    {
+      "Name": "Actual email-validation-enforcement prepares Create account without selecting Send a new code or Back",
+      "Passed": true
+    },
+    {
+      "Name": "Actual email-validation-enforcement Create account target survives native-click confirmation",
+      "Passed": true
+    },
+    {
+      "Name": "Actual verification copy does not authorize Create account on an unrelated route",
+      "Passed": true
+    },
+    {
+      "Name": "Enforcement Create account needs the account-creation heading as well as verification copy",
+      "Passed": true
+    },
+    {
+      "Name": "Actual email-validation-enforcement rejects the wrong visible email recipient",
+      "Passed": true
+    },
+    {
+      "Name": "Actual email-validation-enforcement never fills a hidden code field",
+      "Passed": true
+    },
+    {
+      "Name": "Enforcement auxiliary Send a new code and Back buttons cannot substitute for the final action",
+      "Passed": true
+    },
+    {
+      "Name": "Actual enforcement route rejects a 4-digit code despite its permissive native pattern",
+      "Passed": true
+    },
+    {
+      "Name": "Actual enforcement route rejects a 5-digit code despite its permissive native pattern",
+      "Passed": true
+    },
+    {
+      "Name": "Actual enforcement route rejects a 7-digit code despite its permissive native pattern",
+      "Passed": true
+    },
+    {
+      "Name": "Actual enforcement route rejects an 8-digit code despite its permissive native pattern",
+      "Passed": true
+    },
+    {
+      "Name": "Actual enforcement invalid-feedback message stops code filling and submission",
+      "Passed": true
+    },
+    {
+      "Name": "Mail automation completes the actual email-validation-enforcement route through its Create account verification button",
+      "Passed": true
+    },
+    {
+      "Name": "Mail automation preserves a leading zero in the received verification code",
+      "Passed": true
+    },
+    {
+      "Name": "Mail automation queries only its selected mailbox after the registration attempt",
+      "Passed": true
+    },
+    {
+      "Name": "Mail automation records attempt and email verification outcomes without claiming account creation",
+      "Passed": true
+    },
+    {
+      "Name": "Resuming a verified mail run never retrieves or submits the code a second time",
+      "Passed": true
+    },
+    {
+      "Name": "Starting a confirmed registration never announces running or replaces the confirmed outcome",
+      "Passed": true
+    },
+    {
+      "Name": "Resume clears a known unclicked verification reservation and retrieves and refills its code",
+      "Passed": true
+    },
+    {
+      "Name": "Recovering canceled verification preparation still dispatches exactly one trusted verification click",
+      "Passed": true
+    },
+    {
+      "Name": "Mail automation rejects a mailbox that differs from the registration address before any action",
+      "Passed": true
+    },
+    {
+      "Name": "A stale mailbox code never enters the current registration form",
+      "Passed": true
+    },
+    {
+      "Name": "A mailbox timeout leaves the code form untouched for manual completion",
+      "Passed": true
+    },
+    {
+      "Name": "Stop cancels the pending mailbox request and ignores a code returned after cancellation",
+      "Passed": true
+    },
+    {
+      "Name": "Mail automation messages and outcome events contain neither codes nor account credentials",
+      "Passed": true
+    },
+    {
+      "Name": "Pointer receipt observes the exact target's trusted down up click and form submit",
+      "Passed": true
+    },
+    {
+      "Name": "Pointer receipt exposes counters only",
+      "Passed": true
+    },
+    {
+      "Name": "Pointer receipt refuses another run or origin",
+      "Passed": true
+    },
+    {
+      "Name": "Pointer receipt supports the separate verification target marker",
+      "Passed": true
+    },
+    {
+      "Name": "Cancel after receipt installation records no press or click",
+      "Passed": true
+    },
+    {
+      "Name": "Untrusted script-dispatched pointer and submit events are not counted",
+      "Passed": true
+    },
+    {
+      "Name": "Pointer receipt becomes unknown after the document route changes",
+      "Passed": true
+    },
+    {
+      "Name": "Replacing a target with the same ID invalidates its pointer receipt",
+      "Passed": true
+    },
+    {
+      "Name": "Registration retry: ignored first trusted click advances on exactly one additional trusted click",
+      "Passed": true
+    },
+    {
+      "Name": "Registration retry: diagnostics record delivered first click and only one retry",
+      "Passed": true
+    },
+    {
+      "Name": "Registration retry: a successful email-code request prevents a second click on an unchanged form",
+      "Passed": true
+    },
+    {
+      "Name": "Registration retry: HTTP 200 with validation reports stops automation without another click",
+      "Passed": true
+    },
+    {
+      "Name": "Registration retry: changed but still valid account values prevent another click",
+      "Passed": true
+    },
+    {
+      "Name": "Registration recovery: HTTP 403 stays in a passive manual-advance wait without another click or refill",
+      "Passed": true
+    },
+    {
+      "Name": "Registration recovery: a manual advance after HTTP 403 resumes verification under the existing run",
+      "Passed": true
+    },
+    {
+      "Name": "Registration recovery: explicit Stop prevents resuming after a later manual page advance",
+      "Passed": true
+    },
+    {
+      "Name": "Registration retry: Stop before the retry deadline prevents every additional click",
+      "Passed": true
+    },
+    {
+      "Name": "Registration retry: unreadable validation blocks retry without aborting normal verification progression",
+      "Passed": true
+    },
+    {
+      "Name": "Registration retry: diagnostic and status output never contains form values or response text",
+      "Passed": true
+    },
+    {
+      "Name": "Closure identity uses the exact account information email and username",
+      "Passed": true
+    },
+    {
+      "Name": "Closure open preparation scrolls to a visible coordinate without clicking",
+      "Passed": true
+    },
+    {
+      "Name": "Closure confirmation checks the same prepared target",
+      "Passed": true
+    },
+    {
+      "Name": "Closure script results contain no email or username",
+      "Passed": true
+    },
+    {
+      "Name": "Closure recognizes only the adult closure consent modal",
+      "Passed": true
+    },
+    {
+      "Name": "Closure checks only its specific modal consent",
+      "Passed": true
+    },
+    {
+      "Name": "Closure destructive confirmation is prepared without a script click",
+      "Passed": true
+    },
+    {
+      "Name": "Closure confirmation needs the exact modal success heading after a confirmed target",
+      "Passed": true
+    },
+    {
+      "Name": "Closure logout prepares only the success modal's Log out action",
+      "Passed": true
+    },
+    {
+      "Name": "Closure recognizes the real nested Public profile card without an anchor ID",
+      "Passed": true
+    },
+    {
+      "Name": "Closure scrolls to the lower Close account card after exact responsive identity checks",
+      "Passed": true
+    },
+    {
+      "Name": "Responsive cards do not relax exact email, username or label identity",
+      "Passed": true
+    },
+    {
+      "Name": "Responsive cards do not relax exact email, username or label identity",
+      "Passed": true
+    },
+    {
+      "Name": "Responsive cards do not relax exact email, username or label identity",
+      "Passed": true
+    },
+    {
+      "Name": "Missing Login information is reported precisely and preparation cannot initiate discovery",
+      "Passed": true
+    },
+    {
+      "Name": "Inspection reveals lower account cards without opening or accepting closure",
+      "Passed": true
+    },
+    {
+      "Name": "Incomplete account data receives one bounded discovery pass",
+      "Passed": true
+    },
+    {
+      "Name": "Discovery resumes when the lower Login information card becomes available",
+      "Passed": true
+    },
+    {
+      "Name": "A newly revealed mismatched Login information card still blocks closure",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses controls on unrelated route /en-gb/account/security",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses controls on unrelated route /account/account-information",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses controls on unrelated route /en-us/account/account-information",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses controls on unrelated route /login",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses unexpected origins even with matching fields",
+      "Passed": true
+    },
+    {
+      "Name": "Closure cannot use an arbitrary caller-supplied origin",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses mismatched, hidden or unrelated identity fields",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses mismatched, hidden or unrelated identity fields",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses mismatched, hidden or unrelated identity fields",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses mismatched, hidden or unrelated identity fields",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses mismatched, hidden or unrelated identity fields",
+      "Passed": true
+    },
+    {
+      "Name": "Closure refuses mismatched, hidden or unrelated identity fields",
+      "Passed": true
+    },
+    {
+      "Name": "Masked closure identity requires explicit host creation evidence",
+      "Passed": true
+    },
+    {
+      "Name": "Known public email mask is accepted only with the host capability",
+      "Passed": true
+    },
+    {
+      "Name": "A merely similar email mask cannot establish closure identity",
+      "Passed": true
+    },
+    {
+      "Name": "Editable username with visible unsaved Save controls blocks closure",
+      "Passed": true
+    },
+    {
+      "Name": "A focused username editor blocks masked account closure",
+      "Passed": true
+    },
+    {
+      "Name": "An unchanged default username field and known mask can be prepared with creation evidence",
+      "Passed": true
+    },
+    {
+      "Name": "Changing account identity between preparation and pointer confirmation blocks closure",
+      "Passed": true
+    },
+    {
+      "Name": "Replacing an identically named closure target invalidates its pointer reservation",
+      "Passed": true
+    },
+    {
+      "Name": "Moving a prepared closure target invalidates its pointer reservation",
+      "Passed": true
+    },
+    {
+      "Name": "A different registration run cannot reuse a closure reservation",
+      "Passed": true
+    },
+    {
+      "Name": "Replacing the identity field invalidates closure even if the displayed value matches",
+      "Passed": true
+    },
+    {
+      "Name": "An obscured Close account control cannot be prepared",
+      "Passed": true
+    },
+    {
+      "Name": "A pre-existing consent dialog cannot skip this run's account-opening step",
+      "Passed": true
+    },
+    {
+      "Name": "Continue cannot be prepared before explicit closure consent",
+      "Passed": true
+    },
+    {
+      "Name": "Prechecked closure consent still passes through this run's acceptance step",
+      "Passed": true
+    },
+    {
+      "Name": "Unrelated, ambiguous or disabled consent dialogs block account closure",
+      "Passed": true
+    },
+    {
+      "Name": "Competing visible dialogs block account closure",
+      "Passed": true
+    },
+    {
+      "Name": "A visible CAPTCHA blocks all closure actions",
+      "Passed": true
+    },
+    {
+      "Name": "A visible page error blocks closure",
+      "Passed": true
+    },
+    {
+      "Name": "Success words outside a modal never confirm account closure",
+      "Passed": true
+    },
+    {
+      "Name": "An unrelated success modal cannot claim this run closed the account",
+      "Passed": true
+    },
+    {
+      "Name": "A header Log out button cannot replace the success modal action",
+      "Passed": true
+    },
+    {
+      "Name": "A modal's accessibility-hidden background retains the same visible DOM identity",
+      "Passed": true
+    },
+    {
+      "Name": "Explicit official login UI can report logout for the host's post-attempt gate",
+      "Passed": true
+    },
+    {
+      "Name": "A logout-shaped route without signed-out UI is not proof of logout",
+      "Passed": true
+    },
+    {
+      "Name": "Known account login wrapper with its WebAuth frame is signed-out UI",
+      "Passed": true
+    },
+    {
+      "Name": "A foreign iframe cannot establish the account login wrapper",
+      "Passed": true
+    },
+    {
+      "Name": "Registration iframe cannot establish signed-out login UI",
+      "Passed": true
+    },
+    {
+      "Name": "Closure wrapper safely serializes caller strings",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login identifies Ubisoft's AuthEmail/AuthPassword form without credentials",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login fills this run's email and password and turns Keep me logged off",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login dispatches native model events without submitting",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login inspection recognizes the same prepared run",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login prepares a visible pointer target without clicking",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login confirms the same target only once",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login script results never expose credentials",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login can erase its transient credential marker",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login wrapper serializes credentials only for fill and excludes unrelated account details",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login handles Ubisoft's floating labels and transparent native RememberMe checkbox",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login can prepare the decorated public form without submitting",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login fills a decorated form initially below a smooth-scrolling viewport",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login still refuses a foreign overlay over decorated credential fields",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login does not silently retain a checked RememberMe when its presentation is hidden",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses credentials on /create",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses credentials on /create-gateway",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses credentials on /reset-password",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses credentials on /email-validation-enforcement",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses credentials on /en-gb/account/account-information",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses credentials on /en-us/account/login",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login supports the observed top-level account/login route",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login rejects an unexpected actual origin",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login cannot enable arbitrary caller origins",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses ambiguous, non-login or unavailable forms before filling",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login does not fill fields covered by a dialog",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login pauses on a visible CAPTCHA challenge",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login does not mistake a hidden captcha component for a challenge",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login pauses on visible errors before filling",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login will not overwrite a different account's populated email",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login will not overwrite a different populated password",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login cannot reuse a different run's form marker",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login verifies input identity again before preparing",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login will not submit if Keep me logged becomes enabled",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login waits for a temporarily disabled Log in button",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login can prepare once the same button becomes enabled",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses a moved pointer target",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses a replaced pointer target",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login refuses replacement credential controls",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login rechecks button visibility immediately before pointer dispatch",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login does not submit after a newly appeared error",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login outer shell requires the host to select its allowed auth frame",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login requires a filled marker before preparing",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login requires preparation before confirmation",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: the cross-origin WebAuth iframe receives this run's credentials and one trusted submit",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: the normal page callback hands control back to account information",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: decorated controls in a tall scrolling iframe fill and receive one trusted submit",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: the allowlisted authentication-origin redirect retains the correct iframe target",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: cancelled run authorization prevents filling and submission",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: visible error pauses before any login attempt",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: visible captcha pauses before any login attempt",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: loading waits without a click or premature pause",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: loading disappears and the same run continues automatically once",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: disabled-loading waits without a click or premature pause",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: disabled-loading disappears and the same run continues automatically once",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: button-loading waits without a click or premature pause",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: button-loading disappears and the same run continues automatically once",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: Stop during a loading layer prevents later filling and submission",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: a persistent overlay times out from the original deadline without entering credentials",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: a timed-out wait requires explicit resume even after the overlay clears",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: an unchanged form and Stop/resume do not repeat the submitted login",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: an unchanged form cannot retry before five seconds",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: the same untouched form receives one bounded trusted retry and reaches account information",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: Stop prevents a due retry from running",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: a second click keeps the original forty-second deadline and cannot become a third after Resume",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: replace-button prevents retrying the previous login",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: change-email prevents retrying the previous login",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: show-error prevents retrying the previous login",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: show-captcha prevents retrying the previous login",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: auth-pending request evidence prevents any second click, including after Resume",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: auth-denied request evidence prevents any second click, including after Resume",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: auth-error request evidence prevents any second click, including after Resume",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: auth-success request evidence prevents any second click, including after Resume",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: verified new account signs in, closes, saves confirmation and logs out",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: final logout and another Start never log back into a closing account",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: explicit Stop before the runner tick prevents iframe credentials and clicks",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: a login redirect after the closure request cannot authenticate again",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: status messages never expose the email, username or password",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: diagnostics identify the blocked fill stage and its fixed reason",
+      "Passed": true
+    },
+    {
+      "Name": "Post-registration login: diagnostics contain no credentials, page URLs or arbitrary DOM text",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: missing confirmed account creation evidence prevents every page action",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: matching account reaches the exact confirmation, saves it, and logs out",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: completion never navigates back into the closed account",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: failed persistence prevents every logout click",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: persistence retry retains the first timestamp without repeating closure",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: Stop and resume never repeat an uncertain destructive confirmation",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: an existing attempt cannot be reassigned to another registration",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: a different account identity prevents opening the closure dialog",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: explicit Stop before the first tick prevents page actions",
+      "Passed": true
+    },
+    {
+      "Name": "Account closure runner: status messages contain no account credentials",
+      "Passed": true
+    },
+    {
+      "Name": "Creation handoff: DOM success text alone is not observed creation evidence",
+      "Passed": true
+    },
+    {
+      "Name": "Creation handoff: native submission and successful email-code response do not claim account creation",
+      "Passed": true
+    },
+    {
+      "Name": "Creation handoff: real WebView2 creation response announces the same submitted run",
+      "Passed": true
+    },
+    {
+      "Name": "Creation handoff: later successful response does not announce the same run twice",
+      "Passed": true
+    },
+    {
+      "Name": "Creation handoff: parent-like explicit-stop guard prevents handoff from a late observed response",
+      "Passed": true
+    }
+  ]
+}
